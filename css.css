@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(148, 144, 144, 0.7);
+}
+
+header,
+form{
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input{
+    background-color: white;
+    padding: 6px 0;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 12px;
+    margin-right: 12px;
+}
+
+button{
+    border-radius: 28px;
+    padding: 10px;
+    background-color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
