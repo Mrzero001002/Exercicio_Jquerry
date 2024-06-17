@@ -4,23 +4,15 @@ $(document).ready(function(){
         e.preventDefault(); 
         const Tar = $("#Tarefa").val();
         const NovoI = $('<li></li>')
-        $(`<h2>${Tar}</h2>`).appendTo(NovoI)
+        $(`<button class="L">${Tar}</button>`).appendTo(NovoI)
         $(NovoI).appendTo('ul');
         $('#Tarrefa').val('');
-        const $Tar = $("#Tarefa")
-        const $NovoI = $('<li style: text-decoration: line-through> </li>')
-        $('h2').onclick(function(){
-            $(`
-                <ul>
-                    <li>
-                    <style>
-                    h2 {
-                    text-decoration: line-through;
-                    }
-                        <h2>${Tar}</h2>
-                    </li>
-                </ul>
-            `).appendTo($NovoI);
-        })
+        $('.L').on('click', function(e){
+            $('.L').prop('disabled', true);
+            $('.L').css('text-decoration', 'line-through')
+
+            $('.L').prop('disabled', false)
+            $('.L').css('text-decoration', 'none');
+        });
     })
 })
