@@ -43,3 +43,7 @@ li{
     color: black;
     text-transform: none;
 }
+
+.done {
+    text-decoration: line-through; /* Adiciona uma linha através do texto quando a classe 'done' é aplicada */
+}
